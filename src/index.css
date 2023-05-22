@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+.title{
+    -webkit-text-stroke: 0.5px #22f4fa;
+    text-shadow: 0 0 10px #22f4fa;
+}
 
 
 @tailwind base;

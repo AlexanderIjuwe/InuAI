@@ -1,116 +1,73 @@
 import React from 'react'
 import '../index.css';
+import RenderLineChart from './chartSales';
+import RenderAreaChart from './lifetime';
 
 
 const Body = () => {
   return (
-    <div className='bg-[#080F1C] flex flex-col'>
-        <div className='flex m-20 p-10 justify-between'>
-            <div className='max-w-3xl'>
-                <img className='bg-white rounded-full' src='' alt='large logo'/>
-            </div>
-            <div className='flex flex-col justify-start max-w-xl h-auto font-Lato '>
-                <h2 className='text-white text-5xl font-bold py-5'>PATNERS $ PLATFORMS</h2>
-                <p className='text-2xl text-white w-full py-5'>dskkodsn fsndgsnf gnsgsdgnsgsngsfng nsglknsnsds ndgsg sngsgnsogns gnsnsdngsgsdlans</p>
-                <button className='text-2xl font-semibold bg-[#D9D9D9] px-3 py-1 rounded-xl w-fit transition ease-in-out delay-200 hover:bg-slate-500 hover:-translate-x-1 hover:scale-110'>Buy $INUAI</button>
-            </div>
+    <div className='bg-[#060409] flex flex-col lg:h-full h-screen w-screen'>
+        <div className='flex justify-between px-5 my-10 mx-5'>
+            <p className='font-semibold lg:text-3xl text-xl title'>Paytron Ecommerce</p>
+            <select className='bg-[#434242] rounded-md text-white lg:w-fit w-20'>
+                <option>May 1 - May 30</option>
+                <option>June 1 - June 30</option>
+            </select>
         </div>
-        <div className='flex flex-col justify-center mx-20'>
-            <h2 className='text-4xl font-bold text-white text-center font-Lato'>Patners $ Platforms</h2>
-            <div className='grid grid-cols-3 gap-5 justify-center mt-10'>
-                <div className='bg-white'>fkdkgf</div>
-                <div className='bg-white'>ffgnkfjngfm</div>
-                <div className='bg-white'>ffdkjn</div>
-                <div className='bg-white'>fgfdngj</div>
-                <div className='bg-white'>fgmdfgklndfj</div>
-                <div className='bg-white'>fgfklndkfn</div>
-                <div className='bg-white'>fgfklndkfn</div>
-                <div className='bg-white'>fgfklndkfn</div>
-                <div className='bg-white'>fgfklndkfn</div>
+        <div className='flex lg:flex-row flex-col justify-around px-4 py-6 text-white'>
+          <div className=' lg:w-[45%] bg-gradient-to-r from-[#22f4fa]/60 to-[#060409] flex justify-between h-fit'>
+            <div className='flex flex-col lg:px-4 px-2 '>
+              <p className='font-medium my-3'>Total sales</p>
+              <div className='font-semibold text-2xl'>300.58TRX</div>
             </div>
+            <RenderLineChart/>
+          </div>
+          <div className='lg:w-[45%] bg-gradient-to-r from-[#22f4fa]/60 to-[#060409] flex flex-col'>
+            <p className='px-4 font-medium my-3'>Summary</p>
+            <div className='flex justify-between px-4 my-3'>
+              <div className='flex flex-col'>
+                <div className='font-semibold text-2xl'>300.58TRX</div>
+                <p className='font-medium text-sm'>Revenue</p>
+              </div>
+              <div className='flex flex-col'>
+                <div className='font-semibold text-2xl'>6</div>
+                <p className='font-medium text-sm'>Orders</p>
+              </div>
+              <div className='flex flex-col'>
+                <div className='font-semibold text-2xl'>50.09TRX</div>
+                <p className='font-medium text-sm'>Avg order value</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='flex flex-col justify-center mx-20 mt-10'>
-            <h2 className='text-4xl text-white text-center font-lato font-bold'>$inuai</h2>
-            <div className='grid grid-cols-3 gap-5 justify-center mt-10'>
-                <div className='bg-white min-h-full'>fgfjgfjd</div>
-                <div className='bg-white min-h-full'>dnjfnjgf</div>
-                <div className='bg-white min-h-full'>gjkfbgkfg</div>
+        <div className='flex flex-col py-5 text-white bg-[#434242] lg:mx-12 mx-5 px-5 justify-center'>
+          <p className='px-4 font-medium my-3'>Sales Funnel</p>
+          <div className='flex justify-between px-4  py-3'>
+            <div className='flex flex-col'>
+              <p className='font-medium text-sm'>Visitors</p>
+              <div className='font-semibold text-2xl'>13</div>
             </div>
+            <div className='flex flex-col'>
+              <p className='font-medium text-sm'>Product views</p>
+              <div className='font-semibold text-2xl'>22</div>
+            </div>
+            <div className='flex flex-col'>
+              <p className='font-medium text-sm'>Add to cart</p>
+              <div className='font-semibold text-2xl'>10</div>
+            </div>
+            <div className='flex flex-col'>
+              <p className='font-medium text-sm'>check out</p>
+              <div className='font-semibold text-2xl'>6</div>
+            </div>
+          </div>
         </div>
-        <div className='flex flex-col justify-center mx-20 mt-10'>
-            <div className='flex mx-20 justify-between px-10 py-10 my-10'>
-                <img className='bg-white max-w-xl' src='' alt='init'/>
-                <p className='text-2xl text-white font-Lato max-w-xl'>hg7yvhvhvhjvu vhvuvbj hvuyvjh jvugjiy ghghjvv gjfngdfngjn nfjkgnj dnfjnd</p>
-            </div>
-            <div className='flex mx-20 justify-between px-10 py-10 my-10'>
-                <div className='flex flex-col max-w-xl'>
-                    <h2 className='text-3xl text-white font-Lato font-bold pb-10'>Inuai Nft</h2>
-                    <p className='text-2xl text-white font-Lato'>njkndvjksbvsdbvjsdvjbskvbskdjvbsdvbksbvsbvkjcvkv</p>
-                </div>
-                <img className='bg-white max-w-xl' src='' alt='inuao'/>
-            </div>
-            <div className='flex mx-20 justify-between px-10 py-10 my-10'>
-                <img className='bg-white max-w-xl' src='' alt='mine'/>
-                <div className='flex flex-col max-w-xl'>
-                    <h2 className='text-3xl text-white font-Lato font-bold pb-10'>INUAI ANONYMIZER</h2>
-                    <p className='text-2xl text-white font-Lato'>dnfjkdnfsndfsn jgnfigndfngf jngdnd sngsgsufgs jgnfgdjfgn</p>
-                </div>
-            </div>
+        <div className=' px-5 py-6 bg-[#434242] my-6 mx-12 '>
+          <div className='lg:flex flex-col w-[50%] h-fit hidden'>
+            <p className='px-4 font-medium my-3 text-white'>Average lifetime revenue</p>
+            <RenderAreaChart/>
+          </div>
         </div>
-        <div className='grid grid-cols-3 gap-5 justify-center mx-20 mt-10'>
-            <div className='bg-white min-h-full'>fgfgh</div>
-            <div className='bg-white min-h-full'>fgfghf</div>
-            <div className='bg-white min-h-full'>fgfgfgf</div>
-        </div>
-        <div className='flex flex-col justify-center mx-20 mt-10'>
-            <h2 className='text-4xl  text-white text-center font-Lato font-bold pb-10'>Tokenomics</h2>
-            <div className='flex justify-between'>
-                <div></div>
-                <p className='text-2xl text-white font-Lato max-w-xl'>hjghglhkj hljhkjg kghgkkgk jgkghj khkgyutjhk jghuitygjhg</p>
-            </div>
-        </div>
-        <div className='flex flex-col justify-center mx-20 mt-10'>
-            <h2 className='text-4xl  text-white text-center font-Lato font-bold pb-10'>Roadmap</h2>
-            <div className='grid grid-cols-3 gap-5 justify-center mx-20 mt-10'>
-                <div className='bg-white min-h-full'>dfdgfg</div>
-                <div className='bg-white min-h-full'>sfgfgfd</div>
-                <div className='bg-white min-h-full'>dgfgrge</div>
-            </div>
-            <h3 className='text-3xl text-white text-center font-Lato font-bold pb-10 pt-10'>INUAI Army</h3>
-        </div>
-        <div>
-            <h2 className='text-2xl text-white text-center font-Lato font-bold pb-10'>Join our Community</h2>
-            <div className='grid grid-cols-3 gap-5 justify-center mx-20 mt-10'>
-                <div className='bg-white min-h-full'>dfngjnfd</div>
-                <div className='bg-white min-h-full'>dgffgfg</div>
-                <div className='bg-white min-h-full'>dgrfdbfb</div>
-            </div>
-        </div>
-        <div className='grid grid-cols-4 justify-center  mx-40 mt-32 mb-10 gap-6 text-white'>
-            <div className='grid grid-row-3 gap-2'>
-                <p>INUAI</p>
-                <p>For the Dogs,</p>
-                <p>By the Dogs</p>
-            </div>
-            <div className='grid grid-row-3 gap-2'>
-                <p>Chart</p>
-                <p>Dexscreener</p>
-                <p>Dextools</p>
-                <p>Dexview</p>
-                <p>PancakeSwap</p>
-            </div>
-            <div className='grid grid-row-3 gap-2'>
-                <p>Trade</p>
-                <p>UniSwap</p>
-                <p>PancakeSwap</p>
-            </div>
-            <div className='grid grid-row-3 gap-2'>
-                <p>InuAi</p>
-                <p>InuAi Chat</p>
-                <p>InuAi Anonymizer</p>
-                <p>InuAi NFT</p>
-            </div>
-        </div>
+
     </div>
   )
 }

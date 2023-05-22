@@ -1,12 +1,12 @@
 import React from 'react'
-import StartingPage from './Pages/startingPage'
 
+import Ecommerce from './Pages/ecommerce'
+import StartingPage from './Pages/startingPage'
 
 const App = () => {
   return (
     <div>
         <StartingPage/>
-
     </div>
   )
 }
